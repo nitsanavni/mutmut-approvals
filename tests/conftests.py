@@ -1,7 +1,5 @@
-import pytest
-from approvaltests.approvals import settings
+from approvaltests.file_approver import FileApprover
 
 
-@pytest.fixture(scope="session", autouse=True)
-def global_setup():
-    settings().allow_multiple_verify_calls_for_this_method()
+def pytest_sessionstart():
+    FileApprover.approved_files = [] 
