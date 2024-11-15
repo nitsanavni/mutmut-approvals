@@ -1,5 +1,6 @@
 from hello import greeting
+from approvaltests import verify
 
 
 def test_hello():
-    assert greeting() == "Hello, World!"
+    verify(greeting())
