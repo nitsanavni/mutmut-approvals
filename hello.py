@@ -1,5 +1,9 @@
+def greeting():
+    return "Hello from mutmut-approvals!"
+
+
 def main():
-    print("Hello from mutmut-approvals!")
+    print(greeting())
 
 
 if __name__ == "__main__":
