@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "approvaltests>=14.1.0",
+    "mutmut>=3.2.1",
+    "pytest>=8.3.3",
+]
